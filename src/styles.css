@@ -1,6 +1,6 @@
 @import "tailwindcss" source(none);
-@source "../src";
 @import "tw-animate-css";
+@source "../src";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -32,20 +32,47 @@ body {
 }
 
 @keyframes sbCardFloat {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-12px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
 }
-.sb-float { animation: sbCardFloat 5s ease-in-out infinite; }
+
+.sb-float {
+  animation: sbCardFloat 5s ease-in-out infinite;
+}
 
 @keyframes sbBounceY {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(6px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(6px);
+  }
 }
-.sb-bounce { animation: sbBounceY 1.8s ease-in-out infinite; }
+
+.sb-bounce {
+  animation: sbBounceY 1.8s ease-in-out infinite;
+}
 
 @media (prefers-reduced-motion: reduce) {
-  .sb-float, .sb-bounce { animation: none !important; }
-  html { scroll-behavior: auto; }
+
+  .sb-float,
+  .sb-bounce {
+    animation: none !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 /*
