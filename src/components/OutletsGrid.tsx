@@ -47,7 +47,6 @@ export function OutletsGrid() {
                   borderRadius: "1rem",
                   border: "1px solid rgba(0,0,0,0.06)",
                   boxShadow: "0 1px 4px rgba(0,0,0,0.05)",
-                  borderTop: "4px solid #CC0014",
                   overflow: "hidden",
                   transition: "all 300ms",
                 }}
@@ -60,19 +59,32 @@ export function OutletsGrid() {
                   e.currentTarget.style.boxShadow = "0 1px 4px rgba(0,0,0,0.05)";
                 }}
               >
+                {/* Inset top red bar */}
+                <span
+                  aria-hidden
+                  style={{
+                    position: "absolute",
+                    top: 0,
+                    left: "16px",
+                    right: "16px",
+                    height: "4px",
+                    background: "#CC0014",
+                    borderRadius: "0 0 4px 4px",
+                  }}
+                />
                 {o.badge && (
                   <span
                     style={{
                       position: "absolute",
-                      top: 0,
-                      right: 0,
+                      top: "10px",
+                      right: "10px",
                       background: "#CC0014",
                       color: "#FFFFFF",
                       fontWeight: 600,
                       fontSize: "0.65rem",
                       letterSpacing: "0.08em",
                       padding: "0.375rem 0.75rem",
-                      borderRadius: "0 0 0 0.75rem",
+                      borderRadius: "0.5rem",
                     }}
                   >
                     {o.badge}

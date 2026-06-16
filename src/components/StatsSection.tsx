@@ -79,7 +79,7 @@ export function StatsSection() {
             }}
           >
             <span style={{ fontWeight: 300, display: "block" }}>15 Years of</span>
-            <span style={{ fontWeight: 800, color: "#CC0014", display: "block" }}>
+            <span style={{ fontWeight: 800, color: "#1A1E3C", display: "block" }}>
               quality &amp; craft.
             </span>
           </h2>
