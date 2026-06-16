@@ -4,6 +4,50 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+  --color-sb-white: #ffffff;
+  --color-sb-grey: #f4f4f6;
+  --color-sb-navy: #1a1e3c;
+  --color-sb-body: #6b7280;
+  --color-sb-red: #cc0014;
+  --color-sb-red-dark: #a8000f;
+  --font-sans: "Urbanist", ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-sb-navy);
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+}
+
+*:focus-visible {
+  outline: 2px solid #cc0014;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+@keyframes sbCardFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+.sb-float { animation: sbCardFloat 5s ease-in-out infinite; }
+
+@keyframes sbBounceY {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+.sb-bounce { animation: sbBounceY 1.8s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .sb-float, .sb-bounce { animation: none !important; }
+  html { scroll-behavior: auto; }
+}
+
 /*
  * Design system definition.
  *
