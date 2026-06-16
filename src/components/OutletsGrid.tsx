@@ -65,11 +65,11 @@ export function OutletsGrid() {
                   style={{
                     position: "absolute",
                     top: 0,
-                    left: "16px",
-                    right: "16px",
+                    left: 0,
+                    right: 0,
                     height: "4px",
                     background: "#CC0014",
-                    borderRadius: "0 0 4px 4px",
+                    zIndex: 1,
                   }}
                 />
                 {o.badge && (
