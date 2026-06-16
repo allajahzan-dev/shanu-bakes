@@ -137,11 +137,10 @@ export function MenuShowcase() {
                     style={{
                       position: "absolute",
                       top: 0,
-                      left: "16px",
-                      right: "16px",
+                      left: 0,
+                      right: 0,
                       height: "3px",
                       background: "#CC0014",
-                      borderRadius: "0 0 4px 4px",
                     }}
                   />
                   <div className="flex flex-col h-full" style={{ padding: "1.5rem" }}>

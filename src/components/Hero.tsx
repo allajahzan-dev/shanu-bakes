@@ -217,8 +217,18 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 sb-bounce">
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 sb-bounce flex flex-col items-center gap-1">
         <ChevronDown size={22} color="rgba(255,255,255,0.35)" />
+        <span
+          style={{
+            fontWeight: 500,
+            fontSize: "0.72rem",
+            letterSpacing: "0.14em",
+            color: "rgba(255,255,255,0.4)",
+          }}
+        >
+          Scroll
+        </span>
       </div>
     </section>
   );
