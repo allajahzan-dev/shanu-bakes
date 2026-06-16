@@ -1,29 +1,44 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Navbar } from "@/components/Navbar";
+import { Hero } from "@/components/Hero";
+import { StatsSection } from "@/components/StatsSection";
+import { MenuShowcase } from "@/components/MenuShowcase";
+import { CustomCakeSection } from "@/components/CustomCakeSection";
+import { OutletsGrid } from "@/components/OutletsGrid";
+import { Footer } from "@/components/Footer";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      { title: "Shanu Bakes — Hot & Cool Bakery & Café | Tamil Nadu Since 2010" },
+      {
+        name: "description",
+        content:
+          "Premium bakery chain with 25+ branches across Tamil Nadu. Freshly baked cakes, live-counter savories, and Hot & Cool refreshments since 2010.",
+      },
+      { property: "og:title", content: "Shanu Bakes — Hot & Cool Bakery & Café" },
+      {
+        property: "og:description",
+        content:
+          "Premium bakery with 25+ branches across Tamil Nadu. Cakes, live savories, and refreshments — fresh daily since 2010.",
+      },
     ],
   }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <>
+      <Navbar />
+      <main id="main">
+        <Hero />
+        <StatsSection />
+        <MenuShowcase />
+        <CustomCakeSection />
+        <OutletsGrid />
+      </main>
+      <Footer />
+    </>
   );
 }
