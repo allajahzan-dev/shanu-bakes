@@ -119,8 +119,8 @@ export function MenuShowcase() {
                     borderRadius: "1rem",
                     border: "1px solid rgba(0,0,0,0.06)",
                     boxShadow: "0 1px 4px rgba(0,0,0,0.05)",
-                    borderTop: "3px solid #CC0014",
                     overflow: "hidden",
+                    position: "relative",
                     transition: "all 300ms",
                   }}
                   onMouseEnter={(e) => {
@@ -132,6 +132,18 @@ export function MenuShowcase() {
                     e.currentTarget.style.boxShadow = "0 1px 4px rgba(0,0,0,0.05)";
                   }}
                 >
+                  <span
+                    aria-hidden
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      left: "16px",
+                      right: "16px",
+                      height: "3px",
+                      background: "#CC0014",
+                      borderRadius: "0 0 4px 4px",
+                    }}
+                  />
                   <div className="flex flex-col h-full" style={{ padding: "1.5rem" }}>
                     <Icon size={22} color="#CC0014" style={{ marginBottom: "0.75rem" }} />
                     <h3 style={{ fontWeight: 700, fontSize: "1rem", color: "#1A1E3C" }}>

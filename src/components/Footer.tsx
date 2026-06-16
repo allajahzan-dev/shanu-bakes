@@ -5,7 +5,14 @@ import { NAV_LINKS } from "@/lib/data";
 
 export function Footer() {
   return (
-    <footer id="contact" style={{ background: "#CC0014", padding: "4rem 1.5rem 2rem" }}>
+    <footer
+      id="contact"
+      style={{
+        background:
+          "linear-gradient(135deg, #1a0005 0%, #3d0010 50%, #1a0005 100%)",
+        padding: "4rem 1.5rem 2rem",
+      }}
+    >
       <div className="mx-auto" style={{ maxWidth: 1200 }}>
         <div className="grid gap-12 lg:grid-cols-3">
           {/* Col 1 */}

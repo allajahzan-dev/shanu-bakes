@@ -24,7 +24,7 @@ export function Hero() {
     >
       <div
         className="mx-auto grid items-center gap-12 px-6 lg:grid-cols-[55fr_45fr]"
-        style={{ maxWidth: 1280, paddingTop: "7rem", paddingBottom: "5rem" }}
+        style={{ maxWidth: 1280, paddingTop: "11rem", paddingBottom: "6rem" }}
       >
         {/* LEFT */}
         <div>
